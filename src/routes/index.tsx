@@ -67,24 +67,31 @@ function IndexComponent() {
 							Canada, Australia, UK, and Beyond
 						</p>
 						<div className="flex flex-col md:flex-row gap-4 md:gap-10">
-							<button
-								className="bg-primary-500 font-semibold text-black px-6 py-2 rounded-md"
-								type="button"
-							>
-								Join our Scroll Family
-							</button>
-							<button
-								className="border-2 border-secondary-500 font-semibold px-6 py-2 rounded-md hover:bg-secondary-500 text-white"
-								type="button"
-							>
-								Download a free pattern
-							</button>
-							<button
-								className="border-2 border-primary-500 font-semibold px-6 py-2 rounded-md hover:bg-primary-500 text-white"
-								type="button"
-							>
-								Explore gallery
-							</button>
+							<a href="#newsletter-form">
+								<button
+									className="bg-primary-500 font-semibold text-black px-6 py-2 rounded-md cursor-pointer"
+									type="button"
+								>
+									Join our Scroll Family
+								</button>
+							</a>
+							<Link to="/gallery">
+								<button
+									className="border-2 border-secondary-500 font-semibold px-6 py-2 rounded-md hover:bg-secondary-500 text-white cursor-pointer"
+									type="button"
+								>
+									Download a free pattern
+								</button>
+							</Link>
+
+							<Link to="/gallery">
+								<button
+									className="border-2 border-primary-500 font-semibold px-6 py-2 rounded-md hover:bg-primary-500 text-white cursor-pointer"
+									type="button"
+								>
+									Explore gallery
+								</button>
+							</Link>
 						</div>
 					</div>
 				</div>
@@ -226,7 +233,7 @@ function IndexComponent() {
 						helpful tutorials sent to your inbox once in a month. Join crafters
 						from Nigeria, the USA, Canada, UK, and Australia
 					</p>
-				  <NewsletterForm />	
+					<NewsletterForm />
 				</div>
 			</section>
 		</div>

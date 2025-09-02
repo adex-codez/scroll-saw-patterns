@@ -58,7 +58,7 @@ export function NewsletterForm() {
 	};
 
 	return (
-		<form onSubmit={handleSubmit} className="w-full">
+		<form onSubmit={handleSubmit} className="w-full" id="newsletter-form">
 			<div className="flex flex-col mb-8">
 				<label htmlFor="name" className="mb-2 text-gray-700">
 					Name
