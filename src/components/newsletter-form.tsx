@@ -25,7 +25,7 @@ export function NewsletterForm() {
 		setMessage(null);
 
 		try {
-			const response = await fetch("https://9ee357c04e41.ngrok-free.app/newsletter-signup", {
+			const response = await fetch("https://scrollsawbackend.onrender.com/api/subscribe", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
