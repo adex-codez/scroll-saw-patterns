@@ -66,8 +66,8 @@ function IndexComponent() {
 							Stay-at-Home Crafters, and DIY Enthusiasts in Nigeria, the USA,
 							Canada, Australia, UK, and Beyond
 						</p>
-						<div className="flex flex-col md:flex-row gap-4 md:gap-10">
-							<a href="#newsletter-form">
+						<div className="flex flex-col md:flex-row gap-4 md:gap-10 items-center">
+							<a href="#newsletter-form" className="inline-block" >
 								<button
 									className="bg-primary-500 font-semibold text-black px-6 py-2 rounded-md cursor-pointer"
 									type="button"
@@ -75,7 +75,7 @@ function IndexComponent() {
 									Join our Scroll Family
 								</button>
 							</a>
-							<Link to="/gallery">
+							<Link to="/gallery" className="inline-block">
 								<button
 									className="border-2 border-secondary-500 font-semibold px-6 py-2 rounded-md hover:bg-secondary-500 text-white cursor-pointer"
 									type="button"
@@ -84,7 +84,7 @@ function IndexComponent() {
 								</button>
 							</Link>
 
-							<Link to="/gallery">
+							<Link to="/gallery" className="inline-block">
 								<button
 									className="border-2 border-primary-500 font-semibold px-6 py-2 rounded-md hover:bg-primary-500 text-white cursor-pointer"
 									type="button"
