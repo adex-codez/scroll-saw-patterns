@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [TanStackRouterVite({ autoCodeSplitting: true }), viteReact(), tailwindcss()],
   server: {
     port: parseInt(process.env.PORT) || 5173,
-    host: "0.0.0.0",  
-    allowedHosts: ["scroll-saw-patterns-production.up.railway.app"]
+    host: "0.0.0.0",
+    allowedHosts: ["asholascrollpatterns.up.railway.app"]
   }
 });
