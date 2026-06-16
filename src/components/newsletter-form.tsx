@@ -25,13 +25,16 @@ export function NewsletterForm() {
 		setMessage(null);
 
 		try {
-			const response = await fetch("https://scrollsawbackend.onrender.com/api/subscribe", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
+			const response = await fetch(
+				"https://asholascrollbackend.up.railway.app/api/subscribe",
+				{
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify(formData),
 				},
-				body: JSON.stringify(formData),
-			});
+			);
 
 			if (!response.ok) {
 				const errorData = await response.json().catch(() => ({}));
